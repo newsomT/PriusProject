@@ -147,7 +147,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1530040756;
+        genesis.nTime = 1530039920;
         genesis.nBits = 0x207fffff;;
         genesis.nNonce = 12345;
 
@@ -261,7 +261,7 @@ public:
         nZerocoinStartHeight = 201576;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1530040756;
+        genesis.nTime = 1530039920;
         genesis.nNonce = 12345;
 
         hashGenesisBlock = genesis.GetHash();
@@ -327,7 +327,7 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Prius: 1 day
         nTargetSpacing = 1 * 60;        // Prius: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1530040756;
+        genesis.nTime = 1530039920;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 12345;
 

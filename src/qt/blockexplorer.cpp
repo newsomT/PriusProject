@@ -434,7 +434,7 @@ BlockExplorer::BlockExplorer(QWidget* parent) : QMainWindow(parent),
     ui->setupUi(this);
 
     this->setStyleSheet(GUIUtil::loadStyleSheet());
-    
+
     connect(ui->pushSearch, SIGNAL(released()), this, SLOT(onSearch()));
     connect(ui->content, SIGNAL(linkActivated(const QString&)), this, SLOT(goTo(const QString&)));
     connect(ui->back, SIGNAL(released()), this, SLOT(back()));
@@ -550,7 +550,7 @@ void BlockExplorer::setBlock(CBlockIndex* pBlock)
 
 void BlockExplorer::setContent(const std::string& Content)
 {
-    QString CSS = "body {font-size:12px; color:#f8f6f6; bgcolor:#6a78c7;}\n a, span { font-family: monospace; }\n span.addr {color:#6a78c7; font-weight: bold;}\n table tr td {padding: 3px; border: 1px solid black; background-color: #6a78c7;}\n td.d0 {font-weight: bold; color:#f8f6f6;}\n h2, h3 { white-space:nowrap; color:#6a78c7;}\n a { color:#88f6f6; text-decoration:none; }\n a.nav {color:#6a78c7;}\n";
+    QString CSS = "body {font-size:12px; color:#f8f6f6; bgcolor:#552084;}\n a, span { font-family: monospace; }\n span.addr {color:#552084; font-weight: bold;}\n table tr td {padding: 3px; border: 1px solid black; background-color: #552084;}\n td.d0 {font-weight: bold; color:#f8f6f6;}\n h2, h3 { white-space:nowrap; color:#552084;}\n a { color:#88f6f6; text-decoration:none; }\n a.nav {color:#552084;}\n";
     QString FullContent = "<html><head><style type=\"text/css\">" + CSS + "</style></head>" + "<body>" + Content.c_str() + "</body></html>";
     // printf(FullContent.toUtf8());
 
