@@ -1,0 +1,26 @@
+# /etc/conf.d/priusd: config file for /etc/init.d/priusd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/prius/prius.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/priusd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/priusd.pid"
+
+# Where to write priusd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/priusd"
+
+# User and group to own priusd process
+#BITCOIND_USER="prius"
+#BITCOIND_GROUP="prius"
+
+# Path to priusd executable
+#BITCOIND_BIN="/usr/bin/priusd"
+
+# Nice value to run priusd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

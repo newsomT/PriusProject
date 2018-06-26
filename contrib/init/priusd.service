@@ -1,0 +1,26 @@
+[Unit]
+Description=Prius's distributed currency daemon
+After=network.target
+
+[Service]
+User=prius
+Group=prius
+
+Type=forking
+PIDFile=/var/lib/priusd/priusd.pid
+
+ExecStart=/usr/bin/priusd -daemon -pid=/var/lib/priusd/priusd.pid \
+          -conf=/etc/prius/prius.conf -datadir=/var/lib/priusd
+
+ExecStop=-/usr/bin/prius-cli -conf=/etc/prius/prius.conf \
+         -datadir=/var/lib/priusd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

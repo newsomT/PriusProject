@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Prius
+Comment=Prius P2P Cryptocurrency
+Comment[fr]=Prius, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Prius, eşten eşe kriptografik sanal para birimi
+Exec=prius-qt %u
+Terminal=false
+Type=Application
+Icon=prius128
+MimeType=x-scheme-handler/prius;
+Categories=Office;Finance;
