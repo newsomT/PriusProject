@@ -1,11 +1,11 @@
 Dash forked Bitcoin - PIVX Forked Dash - PRIUS Forked PIVX
-## Project INFO ##
+## PROJECT INFORMATIONS ##
 
 <table>
 <tr><td>Website</td><td>https://prius.io</td></tr>
 </table>
 
-## Coin Specs ##
+## FULL COIN SPECIFICATIONS ##
 <table>
 <tr><td>Algorithm</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
@@ -19,9 +19,10 @@ Dash forked Bitcoin - PIVX Forked Dash - PRIUS Forked PIVX
 <tr><td>POS REWARD</td><td>30%</td></tr>
 <tr><td>POW</td><td>BLOCK 1 to 200</td></tr>
 <tr><td>POS</td><td>START BLOCK 200</td></tr>
+<tr><td>MIN STAKE AGE</td><td>1 HOUR</td></tr>
 </table>
 
-## PoS Rewards Breakdown ##
+## MASTERNODE and POS REWARD STRUCTURE ##
 
 <table>
 <th>Block Height</th><th>Reward</th><th>Masternodes</th><th>Stakers</th>
